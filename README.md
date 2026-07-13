@@ -45,6 +45,8 @@ Restart Codex or start a new task after pulling new agents or skills.
 bash ~/Documents/Codex/exports/scripts/push-sync.sh "Update Codex agents"
 ```
 
+This uses the normal Git credentials on the current machine. Configure GitHub HTTPS credentials or an SSH key once per machine before relying on command-line push.
+
 ## Import existing setup from another machine
 
 On the other machine, clone this repo, then copy portable files into it:
