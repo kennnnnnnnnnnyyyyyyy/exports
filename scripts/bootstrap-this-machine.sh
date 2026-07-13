@@ -39,7 +39,7 @@ mkdir -p "$repo_root/codex/agents" "$repo_root/codex/skills"
 
 link_path "$repo_root/codex/agents" "$codex_home/agents"
 
-"$repo_root/scripts/link-skills.sh"
+bash "$repo_root/scripts/link-skills.sh"
 
 cat <<EOF
 
