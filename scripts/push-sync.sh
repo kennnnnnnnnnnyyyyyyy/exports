@@ -14,4 +14,13 @@ else
   git commit -m "$message"
 fi
 
-git push
+if ! git push; then
+  cat <<'EOF'
+
+Push failed. This machine probably does not have command-line GitHub credentials yet.
+
+Configure GitHub HTTPS credentials or switch the remote to SSH after adding an SSH key,
+then rerun this script.
+EOF
+  exit 1
+fi
