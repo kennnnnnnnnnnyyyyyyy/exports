@@ -1,0 +1,40 @@
+# macOS/editor noise
+.DS_Store
+*.swp
+*.tmp
+
+# Environment and secret files
+.env
+.env.*
+!.env.example
+**/auth.json
+**/*.token
+**/*.key
+**/*.pem
+**/*.p12
+**/*.pfx
+
+# Codex local state, caches, logs, and databases.
+# Keep this repository focused on portable agents/skills only.
+**/*.sqlite
+**/*.sqlite-*
+**/*.db
+**/*.db-*
+**/*.log
+cache/
+.cache/
+logs/
+sessions/
+tmp/
+.tmp/
+sqlite/
+plugins/cache/
+computer-use/
+process_manager/
+shell_snapshots/
+visualizations/
+vendor_imports/
+models_cache.json
+installation_id
+chrome-native-hosts-v2.json
+.codex-global-state.json*
